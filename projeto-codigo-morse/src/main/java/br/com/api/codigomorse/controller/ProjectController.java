@@ -35,7 +35,7 @@ public class ProjectController{
     }
 
     @GetMapping("/morse/{morseCode}")
-    public ProjectDTO getFollowedPosts(@PathVariable String morseCode) {
+    public ProjectDTO endPoint(@PathVariable String morseCode) {
         return projectService.translateMorseCode(morseCode);
     }
 }
